@@ -1,26 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Spalten</title>
+    <title>Sommer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav class="w3-bar w3-border w3-light-grey w3-large">
-      <a href="html/aktivitäten.html" class="w3-bar-item w3-button w3-border-right">Aktivitäten</a>
-      <a href="html/essen.html" class="w3-bar-item w3-button w3-border-right">Essen</a>
-      <a href="html/farben.html" class="w3-bar-item w3-button w3-border-right">Farben</a>
-      <a href="html/ort.html" class="w3-bar-item w3-button w3-border-right">Ort</a>
+<body class="w3-theme-l1 w3-border">
+  <!--Navigation, fixiert-->
+    <nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
+      <a href="index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-theme-d2">Sommer</a>
+      <a href="html/aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-hover">Aktivitäten</a>
+      <a href="html/farben.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Farben</a>
+      <a href="html/ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Orte</a>
     </nav>
-    <header class="w3-container w3-green">
-      <h1 class="w3-jumbo">Spalten für ein Layout</h1>
+
+    <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
+      <h1 class="w3-jumbo">Sommer</h1>
     </header>
 
-   
-    <footer class="w3-container w3-light-blue">
-      <p>Dies ist mein Footer</p>
-    </footer>
+  <div class="w3-container w3-theme-d4 w3-center w3-margin-top w3-padding-16 w3-text-white">
+    <h1>Über uns</h1>
+  </div>
+
+ <!--3 Spalten mit Cards drinn-->
+<div class="w3-row-padding w3-margin-top w3-margin-bottom">
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-theme-d2">
+      <img src="img/platzhalter.jpg" style="width:100%">
+      <div class="w3-container w3-center">
+        <p>Anja</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-theme-d2">
+      <img src="img/platzhalter.jpg" style="width:100%">
+      <div class="w3-container w3-center">
+        <p>Fiona</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-theme-d2">
+      <img src="img/platzhalter.jpg" style="width:100%">
+      <div class="w3-container w3-center">
+        <p>Eleonora</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--2 Spalten-->
+<div class="w3-row w3-padding">
+  <div class="w3-col w3-green w3-padding" style="width:60%">
+    <div class="w3-light-grey w3-section" style="width:75%">
+ <div class="w3-light-grey w3-section">
+  <button onclick="myFunction('Demo4')" class="w3-button w3-block">
+  Infos</button>
+  <div id="Demo4" class="w3-hide w3-container">
+    <p>Lorem ipsum 100% width</p>
+  </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-col w3-dark-grey w3-padding" style="width:40%">
+    <p> Mehr Infos über dieses Modul: <br>
+    <a href="https://mbk.ict-berufsbildung.ch/module/287/1/de-DE?degree=a940e4da-f8b5-f011-bbd3-000d3a8337ea&title=Websites-mit-CSS-gestalten">M287</a>
+    </p>
+  </div>
+</div>
+
+ <!--dropdown script-->
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  <!--/dropdown script-->
+
+
+
+
+<footer class="w3-container w3-light-blue">
+  <p class="w3-xlarge w3-bold">Über diese Website</p>
+  <p>Dateiname der dazugehörenden Dokumentation <br> 
+    Abgabedatum</p>  
+</footer>
+
 </body>
 </html>
