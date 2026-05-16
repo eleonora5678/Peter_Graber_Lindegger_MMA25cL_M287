@@ -17,9 +17,14 @@
       <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right ">Orte</a>
     </nav>
 
+  <!--/fertig/Navigation, fixiert-->
+  <!--Header-->
+
     <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
       <h1 class="w3-jumbo w3-animate-left">Aktivitäten</h1>
     </header>
+
+   <!--/fertig/header-->
 
     <div class="w3-container">
   <h2>
@@ -46,6 +51,45 @@ Biken & Radfahren im Ötztal - Tirol - Austria</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam modi fuga amet doloremque nobis adipisci saepe beatae pariatur non distinctio. Veritatis eos vel ea ad omnis laudantium repudiandae cumque libero.</p>
   </div>
 </div>
+
+<!--Accordion-->
+
+<div class="w3-container w3-margin">
+
+  <button onclick="myFunction('Demo3')" 
+  class="w3-btn w3-block w3-red w3-large w3-left-align w3-hover-shadow w3-theme-l3">
+    Andere Aktivitäten
+  </button>
+
+  <div id="Demo3" class="w3-hide w3-container w3-padding w3-theme-l5 w3-left-align">
+
+<ul id="Demo3" class="w3-ul w3-hide w3-container w3-padding w3-theme-l5 w3-left-align">
+        <li>Schwimmen im See</li>
+        <li>Grillieren mit Freunden</li>
+        <li>Open-Air Kino</li>
+        <li>Velofahren</li>
+        <li>Wandern in den Bergen</li>
+      </ul>
+
+  </div>
+
+</div>
+
+ <!--Script Accordion-->
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  <!--/fertig/Accordion script-->
+
+<!--/fertig/Accordion-->
+
 
 <footer class="w3-container w3-light-blue">
   <p class="w3-xlarge w3-bold">Über diese Website</p>
