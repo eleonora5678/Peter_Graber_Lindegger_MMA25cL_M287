@@ -3,51 +3,105 @@
 <head>
     <title>Orte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--W3C Framework-->
+
+    <!-- W3C Framework -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .flex-row {
+        display: flex;
+      }
+
+      .flex-row .w3-col {
+        display: flex;
+        align-items: center;
+      }
+    </style>
 </head>
+
 <body class="w3-theme-l1 w3-border">
-  <!--Navigation, fixiert-->
-    <nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
-      <a href="../index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Sommer</a>
-      <a href="aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-hover">Aktivitäten</a>
-      <a href="farben.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Farben</a>
-      <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-theme-d2">Orte</a>
-    </nav>
 
-    <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
-      <h1 class="w3-jumbo">Orte</h1>
-    </header>
+<!-- Navigation -->
+<nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
+  <a href="../index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Sommer</a>
+  <a href="aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Aktivitäten</a>
+  <a href="farben.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Farben</a>
+  <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-theme-d2">Orte</a>
+</nav>
 
-<!-- Spalten unterschiedlich gross-->
-<div class="w3-row">
-  <div class="w3-col w3-l1 w3-padding w3-center" style="width:35%"><p>NAME</p></div>
-  <div class="w3-col w3-l1 w3-padding w3-center" style="width:35%"><p>BESCHREIBUNG</p></div>
-  <div class="w3-col w3-l1 w3-padding w3-center" style="width:30%"><p>BEWERTUNGEN</p></div>
+<header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
+  <h1 class="w3-jumbo w3-animate-left">Orte</h1>
+</header>
+
+<!-- Kopfzeile -->
+<div class="w3-row w3-row-padding flex-row">
+  <div class="w3-col w3-padding w3-center" style="width:15%"><p>NAME</p></div>
+  <div class="w3-col w3-padding w3-center" style="width:65%"><p>BESCHREIBUNG</p></div>
+  <div class="w3-col w3-padding w3-center" style="width:20%"><p>BEWERTUNGEN</p></div>
 </div>
 
-<div class="w3-row">
-  <div class="w3-col w3-green w3-padding" style="width:35%"><p>Spanien</p></div>
-  <div class="w3-col w3-blue w3-padding " style="width:35%"><p>Spanien im Sommer ist heiß, sonnig und lebendig. Städte wie Madrid sind sehr warm, während Küstenregionen angenehmer sind. Typisch sind lange Tage, spätes Leben am Abend und viele Feste.</p></div>
-  <div class="w3-col w3-red w3-padding " style="width:30%"><p>+ Vorteile: viel Sonne, tolle Strände, lebendige Stimmung
-– Nachteile: oft extreme Hitze (z. B. in Sevilla), viele Touristen, höhere Preise
-Bewertung: etwa 7–8/10 – ideal für Strandurlaub, weniger für Städte bei großer Hitze.</p></div>
+<!-- Zeile 1 -->
+<div class="w3-row w3-row-padding flex-row">
+  <div class="w3-col w3-green w3-padding" style="width:15%"><p>Spanien</p></div>
+  <div class="w3-col w3-blue w3-padding" style="width:65%">
+    <p>
+      Klima: sehr heiß & trocken (30–40 °C) <br>
+      Stimmung: lebendig, touristisch, lange Nächte <br>
+      Highlights: Strände, Städte, Party, Essen
+    </p>
+  </div>
+  <div class="w3-col w3-red w3-padding" style="width:20%">
+    <p>
+      Strand:★★★★★<br>
+      Städte:★★★☆☆ (zu heiß)<br>
+      Natur:★★★★☆ (Vielfalt: Küsten, Berge, Wüstenregionen)
+    </p>
+  </div>
 </div>
 
-<div class="w3-row">
-  <div class="w3-col w3-green w3-padding" style="width:35%"><p>Italien</p></div>
-  <div class="w3-col w3-blue w3-padding " style="width:35%"><p> </p></div>
-  <div class="w3-col w3-red w3-padding " style="width:30%"><p> </p></div>
+<!-- Zeile 2 -->
+<div class="w3-row w3-row-padding flex-row">
+  <div class="w3-col w3-green w3-padding" style="width:15%">
+    <p>Italien</p>
+  </div>
+  <div class="w3-col w3-blue w3-padding" style="width:65%">
+    <p>
+      Klima: heiß (28–38 °C), teils schwül <br>
+      Stimmung: sehr lebendig, kulturell, touristisch <br>
+      Highlights: Essen, Küsten, Städte, Landschaft
+    </p>
+  </div>
+  <div class="w3-col w3-red w3-padding" style="width:20%">
+    <p>
+      Strand:★★★★★ <br>
+      Städte:★★★☆☆ (heiß & voll) <br>
+      Natur:★★★★★ (Berge, Seen, Hügel, Küsten)
+    </p>
+  </div>
 </div>
 
-<div class="w3-row">
-  <div class="w3-col w3-green w3-padding" style="width:35%"><p>Schweiz</p></div>
-  <div class="w3-col w3-blue w3-padding " style="width:35%"><p> </p></div>
-  <div class="w3-col w3-red w3-padding " style="width:30%"><p> </p></div>
+<!-- Zeile 3 -->
+<div class="w3-row w3-row-padding flex-row">
+  <div class="w3-col w3-green w3-padding" style="width:15%">
+    <p>Schweiz</p>
+  </div>
+  <div class="w3-col w3-blue w3-padding" style="width:65%">
+    <p>
+      Klima: mild (20–30 °C), angenehm frisch <br>
+      Stimmung: ruhig, entspannt, naturorientiert <br>
+      Highlights: Berge, Seen, Wandern, frische Luft
+    </p>
+  </div>
+  <div class="w3-col w3-red w3-padding" style="width:20%">
+    <p>
+      Strand:★☆☆☆☆ (nur Seen und Flüsse) <br>
+      Städte:★★★★☆ (angenehm & sauber) <br>
+      Natur:★★★★★ (Alpen, Seen, beste Qualität Europas)
+    </p>
+  </div>
 </div>
-
 
 <!-- Fotoalbum -->
 <div class="w3-row-padding w3-margin-top">
@@ -62,7 +116,7 @@ Bewertung: etwa 7–8/10 – ideal für Strandurlaub, weniger für Städte bei g
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="https://i.pinimg.com/736x/e5/b9/d0/e5b9d066d01ef73d2e3af35c58060edc.jpg" style="width: 100%">
+      <img src="https://i.pinimg.com/736x/e5/b9/d0/e5b9d066d01ef73d2e3af35c58060edc.jpg" style="width:100%">
       <div class="w3-container">
         <h5>Italien</h5>
       </div>
@@ -79,12 +133,9 @@ Bewertung: etwa 7–8/10 – ideal für Strandurlaub, weniger für Städte bei g
   </div>
 </div>
 
-</div>
-
 <footer class="w3-container w3-light-blue">
   <p class="w3-xlarge w3-bold">Über diese Website</p>
-  <p>Dateiname der dazugehörenden Dokumentation <br> 
-    Abgabedatum</p>  
+  <p>Dateiname der dazugehörenden Dokumentation <br> Abgabedatum</p>
 </footer>
 
 </body>
