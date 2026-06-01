@@ -6,7 +6,18 @@
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
-   <link rel="stylesheet" href="css/style.css">
+   <style>
+   /* Responsive video styles (moved from css/style.css) */
+   .video-container { display:flex; justify-content:center; margin: 1rem 0; }
+   .video-wrapper { width:100%; max-width:900px; }
+   .video-wrapper video { width:100%; height:480px; max-height:480px; display:block; }
+
+   /* Fallback for very small viewports */
+   @media (max-width:480px) {
+     .video-wrapper { max-width:100%; }
+     .video-wrapper video { max-height:280px; }
+   }
+   </style>
 </head>
 <body class="w3-theme-l1 w3-border">
   <!--Navigation, fixiert-->
@@ -29,25 +40,28 @@
     <div class="w3-container">
   <h2>
 Biken & Radfahren im Ötztal - Tirol - Austria</h2>
-  <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="w3-large">Das Ötztal in Tirol bietet perfekte Bedingungen für Biker und Radfahrer. Ob gemütliche Talrouten, anspruchsvolle Mountainbike-Strecken oder spektakuläre Passstrassen – die beeindruckende Alpenlandschaft macht jede Tour zu einem besonderen Erlebnis.
+</p>
 </div>
 
-<div style="display: flex; justify-content: center;">
-  <video width="900" height="500" controls>
-    <source src="../video/biken.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
+<div class="video-container">
+  <div class="video-wrapper">
+    <video controls>
+      <source src="../video/biken.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
 </div>
 
 <div class="w3-row w3-border">
   <div class="w3-container w3-col s6 w3-light-blue">
-  <h2>w3-half</h2>  
+  <h2>Hier kämen die Infos zu den Aktivitäten</h2>  
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam modi fuga amet doloremque nobis adipisci saepe beatae pariatur non distinctio. Veritatis eos vel ea ad omnis laudantium repudiandae cumque libero.</p>
   </div>
   <div class="w3-container w3-col s6">
-    <h2>w3-half</h2>  
+    <h2>Hier kämen die Infos zu den Aktivitäten</h2>  
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam modi fuga amet doloremque nobis adipisci saepe beatae pariatur non distinctio. Veritatis eos vel ea ad omnis laudantium repudiandae cumque libero.</p>
   </div>
 </div>
