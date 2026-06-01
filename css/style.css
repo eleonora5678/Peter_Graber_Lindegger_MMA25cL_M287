@@ -1,5 +1,40 @@
+
+/* Neue Schriftart für die ganze Website */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Hover Effect Farbpalette (Seite Farben) */
+.color-card {
+  width: 85%;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer am Ende der Seite fixieren (Besonders wichtig bei Seite Farben) */
+
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
 }
