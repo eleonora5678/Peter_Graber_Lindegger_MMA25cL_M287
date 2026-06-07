@@ -4,125 +4,133 @@
     <title>Sommer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="w3-theme-l1 w3-border">
-  <!--Navigation, fixiert-->
-  <!--ZUP: Navigation muss auf mobile nicht aufklappen können-->
-    <nav class="w3-bar w3-theme w3-xlarge w3-center w3-top">
-      <a href="index.html" style="width:25%" class="w3-bar-item w3-button w3-theme-d2 w3-hide-small">Sommer</a>
-      <a href="html/aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-hover w3-hide-small">Aktivitäten</a>
-      <a href="html/farben.html" style="width:25%" class="w3-bar-item w3-button w3-hide-small">Farben</a>
-      <a href="html/ort.html" style="width:25%" class="w3-bar-item w3-button w3-hide-small">Orte</a>
-     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-    </nav>
 
-    <nav id="demo" class="w3-bar-block w3-theme w3-xlarge w3-center w3-hide w3-hide-large w3-hide-medium" style="margin-top:52px">
-      <a href="index.html" class="w3-bar-item w3-button w3-theme-d2">Sommer</a>
-      <a href="html/aktivitaeten.html" class="w3-bar-item w3-button w3-hover">Aktivitäten</a>
-      <a href="html/farben.html" class="w3-bar-item w3-button">Farben</a>
-      <a href="html/ort.html"  class="w3-bar-item w3-button">Orte</a>
-    </nav>
+  <!-- Navigation, fixiert -->
+  <!-- ZUP: Navigation muss auf mobile nicht aufklappen können -->
+  <nav class="w3-bar w3-theme w3-xlarge w3-center w3-top">
+    <a href="index.html" style="width:25%" class="w3-bar-item w3-button w3-theme-d2 w3-hide-small">Sommer</a>
+    <a href="html/aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-hover w3-hide-small">Aktivitäten</a>
+    <a href="html/farben.html" style="width:25%" class="w3-bar-item w3-button w3-hide-small">Farben</a>
+    <a href="html/ort.html" style="width:25%" class="w3-bar-item w3-button w3-hide-small">Orte</a>
 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </nav>
 
-    <!--Titel mit Animation-->
+  <nav id="demo" class="w3-bar-block w3-theme w3-xlarge w3-center w3-hide w3-hide-large w3-hide-medium" style="margin-top:52px">
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-d2">Sommer</a>
+    <a href="html/aktivitaeten.html" class="w3-bar-item w3-button w3-hover">Aktivitäten</a>
+    <a href="html/farben.html" class="w3-bar-item w3-button">Farben</a>
+    <a href="html/ort.html" class="w3-bar-item w3-button">Orte</a>
+  </nav>
+
+  <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon/sonne.png">
+
+  <!-- Hauptinhalt -->
+  <main>
+
+    <!-- Titel -->
     <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
       <h1 class="w3-jumbo w3-animate-left">Sommer</h1>
     </header>
 
-  <header class="w3-container w3-theme-d4 w3-center w3-margin-top w3-padding-16 w3-text-white">
-    <h1>Über uns</h1>
-  </header>
+    <!-- Untertitel -->
+    <section>
+      <header class="w3-container w3-theme-d4 w3-center w3-margin-top w3-padding-16 w3-text-white">
+        <h2>Über uns</h2>
+      </header>
+    </section>
 
- <main> 
+    <!-- Cards, 3 Spalten  -->
+    <section class="w3-row-padding w3-margin-top w3-margin-bottom">
 
+      <article class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-theme-d2">
+          <img src="img/platzhalter.jpg" style="width:100%" alt="">
+          <div class="w3-container w3-center">
+            <p>Anja</p>
+          </div>
+        </div>
+      </article>
 
- <!--3 Spalten mit Cards drinn-->
-<div class="w3-row-padding w3-margin-top w3-margin-bottom">
+      <article class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-theme-d2">
+          <img src="img/platzhalter.jpg" style="width:100%" alt="">
+          <div class="w3-container w3-center">
+            <p>Fiona</p>
+          </div>
+        </div>
+      </article>
 
-  <div class="w3-third">
-    <div class="w3-card-4 w3-theme-d2">
-      <img src="img/platzhalter.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <p>Anja</p>
-      </div>
-    </div>
-  </div>
+      <article class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-theme-d2">
+          <img src="img/platzhalter.jpg" style="width:100%" alt="">
+          <div class="w3-container w3-center">
+            <p>Eleonora</p>
+          </div>
+        </div>
+      </article>
 
-  <div class="w3-third">
-    <div class="w3-card-4 w3-theme-d2">
-      <img src="img/platzhalter.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <p>Fiona</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="w3-third">
-    <div class="w3-card-4 w3-theme-d2">
-      <img src="img/platzhalter.jpg" style="width:100%">
-      <div class="w3-container w3-center">
-        <p>Eleonora</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Infos über uns, 4 Spalten, 2 auf Tablet -->
+    <section class="w3-row-padding w3-margin-top w3-margin-bottom">
 
+      <article class="w3-col s6 m6 l3 w3-margin-bottom">
+        <div class="w3-container w3-theme-d4">
+          <h2>Über uns</h2>
+          <p>Alter:</p>
+          <p>Wohnort:</p>
+          <p>Hobbys:</p>
+        </div>
+      </article>
 
+      <article class="w3-col s6 m6 l3 w3-margin-bottom">
+        <div class="w3-container w3-theme-l4">
+          <h2>Anja Lindegger</h2>
+          <p>15 Jahre</p>
+          <p>Hildisrieden</p>
+          <p>Tanzen, Saxophon</p>
+        </div>
+      </article>
 
-<!--4 Spalten Laptop, Smartphone 2 Spalten-->
-<div class="w3-row-padding w3-margin-top w3-margin-bottom">
+      <article class="w3-col s6 m6 l3 w3-margin-bottom">
+        <div class="w3-container w3-theme-l4">
+          <h2>Fiona Graber</h2>
+          <p>16 Jahre</p>
+          <p>Küngoldingen</p>
+          <p>STV, Lesen, Freunde</p>
+        </div>
+      </article>
 
-  <div class="w3-col s6 m6 l3 w3-margin-bottom">
-    <div class="w3-container w3-theme-l4">
-      <h2>Über uns</h2> 
-      <p>Alter:</p>
-      <p>Wohnort:</p>
-      <p>Hobbys:</p>
-    </div>
-  </div>
+      <article class="w3-col s6 m6 l3 w3-margin-bottom">
+        <div class="w3-container w3-theme-l4">
+          <h2>Eleonora Peter</h2>
+          <p>16 Jahre</p>
+          <p>Schötz</p>
+          <p>Klavier, Lesen, Joggen</p>
+        </div>
+      </article>
 
-  <div class="w3-col s6 m6 l3 w3-margin-bottom">
-    <div class="w3-container w3-theme-d2">
-      <h2>Anja Lindegger</h2>
-      <p>15 Jahre</p>
-      <p>Hildisrieden</p>
-      <p>Tanzen, Saxophon</p>
-    </div>
-  </div>
+    </section>
 
-  <div class="w3-col s6 m6 l3 w3-margin-bottom">
-    <div class="w3-container w3-theme-d3">
-      <h2>Fiona Graber</h2>
-      <p>16 Jahre</p>
-      <p>Küngoldingen</p>
-      <p>STV, Lesen, Freunde</p>
-    </div>
-  </div>
+  </main>
 
-  <div class="w3-col s6 m6 l3 w3-margin-bottom">
-    <div class="w3-container w3-theme-d4">
-      <h2>Eleonora Peter</h2>
-      <p>16 Jahre</p>
-      <p>Schötz</p>
-      <p>Klavier, Lesen, Joggen</p>
-    </div>
-  </div>
+  <!-- Footer -->
 
-</div>
-  <!--/fertig/4 Spalten, Smartphone 2 Spalten-->
-
-</main>
-
-<footer class="w3-container w3-light-blue">
-  <p class="w3-xlarge w3-bold">Über diese Website</p>
-  <p>Dateiname der dazugehörenden Dokumentation <br> 
-    Abgabedatum</p>  
-</footer>
+  <footer class="w3-container w3-light-blue">
+    <p class="w3-xlarge w3-bold">Über diese Website</p>
+    <p>Dateiname der dazugehörenden Dokumentation: Peter_Graber_Lindegger_MMA25cl_M287 <br>
+       Abgabedatum: 08.06.2026</p>
+  </footer>
 
 </body>
 </html>

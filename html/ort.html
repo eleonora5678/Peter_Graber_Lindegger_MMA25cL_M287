@@ -9,32 +9,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
     <link rel="stylesheet" href="../css/style.css">
-
-    <style>
-      .flex-row {
-        display: flex;
-      }
-
-      .flex-row .w3-col {
-        display: flex;
-        align-items: center;
-      }
-
-      /* Abstand zwischen den Box-Zeilen */
-      .data-row {
-        margin-bottom: 16px;
-      }
-
-      /* keine Lücke nach der letzten Zeile */
-      .data-row:last-child {
-        margin-bottom: 0;
-      }
-    </style>
 </head>
+
+<main>
 
 <body class="w3-theme-l1 w3-border">
 
-<!-- Navigation -->
+  <!-- Navigation, fixiert -->
 <nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
   <a href="../index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Sommer</a>
   <a href="aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Aktivitäten</a>
@@ -42,173 +23,172 @@
   <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right w3-theme-d2">Orte</a>
 </nav>
 
-<!-- Header -->
-<header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white ">
+<!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon/pin.png">
+
+    <!-- Titel -->
+<header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
   <h1 class="w3-jumbo w3-animate-left">Orte</h1>
 </header>
 
+
+  <!-- Hauptinhalt -->
+
 <main>
 
-<!--  3 Spalten responsive-->
-<div class="w3-margin-top w3-margin-bottom">
+  <!-- 3 Spalten, unterschiedliche Spaltenbreite -->
 
+  <section class="w3-margin-top w3-margin-bottom">
 
-<!-- Kopfzeile -->
-<div class="w3-row-padding w3-hide-small">
+    <!-- Kopfzeile -->
+    <div class="w3-row-padding w3-hide-small">
 
-  <div class="w3-col l2 s12 w3-theme-d4 w3-padding w3-center">
-    <b>Name</b>
-  </div>
-
-  <div class="w3-col l6 s12 w3-theme-d4 w3-padding w3-center">
-    <b>Steckbrief</b>
-  </div>
-
-  <div class="w3-col l4 s12 w3-theme-d4 w3-padding w3-center">
-    <b>Bewertung</b>
-  </div>
-
-</div>
-
-  <!-- Zeile 1 -->
-  <div class="w3-row-padding w3-border-bottom w3-margin-bottom">
-
-    <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
-      <p></br>
-        Spanien </br></br>
-      </p>
-    </div>
-
-    <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
-      <p>
-        Klima: sehr heiß & trocken (30–40 °C) <br>
-        Stimmung: lebendig, touristisch, lange Nächte <br>
-        Highlights: Strände, Städte, Party, Essen
-      </p>
-    </div>
-
-    <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
-      <p>
-        Strand:★★★★★<br>
-        Städte:★★★☆☆ (zu heiß)<br>
-        Natur:★★★★☆ (Vielfalt: Küsten, Berge, Wüstenregionen)
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Zeile 2 -->
-  <div class="w3-row-padding w3-border-bottom w3-margin-bottom">
-
-    <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
-      <p></br>Italien</br></br></p>
-    </div>
-
-    <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
-      <p>
-        Klima: heiß (28–38 °C), teils schwül <br>
-        Stimmung: sehr lebendig, kulturell, touristisch <br>
-        Highlights: Essen, Küsten, Städte, Landschaft
-      </p>
-    </div>
-
-    <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
-      <p>
-        Strand:★★★★★ <br>
-        Städte:★★★☆☆ (heiß & voll) <br>
-        Natur:★★★★★ (Berge, Seen, Hügel, Küsten)
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Zeile 3 -->
-  <div class="w3-row-padding w3-border-bottom w3-margin-bottom">
-
-    <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
-      <p></br>
-        Schweiz</p>
-        </br>
-    </div>
-
-    <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
-      <p>
-        Klima: mild (20–30 °C), angenehm frisch <br>
-        Stimmung: ruhig, entspannt, naturorientiert <br>
-        Highlights: Berge, Seen, Wandern, frische Luft
-      </p>
-    </div>
-
-    <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
-      <p>
-        Strand:★☆☆☆☆ (nur Seen und Flüsse) <br>
-        Städte:★★★★☆ (angenehm & sauber) <br>
-        Natur:★★★★★ (Alpen, Seen, beste Qualität Europas)
-      </p>
-    </div>
-
-  </div>
-
-</div>
-<!-- /fertig/ 3 Spalten responsive -->
-
-
-
-<!-- Audio -->
-<div class="w3-margin-top w3-margin-bottom w3-padding">
-
-  <h4>
-    Meeresrauschen
-  </h4>
-
-  <audio controls preload="none" class="w3-block">
-    <source src="../video/Meeresrauschen Audio.mp4" type="audio/mpeg">
-    Dein Browser unterstützt das Audio-Element nicht.
-  </audio>
-</div>
-<!-- /fertig/Audio -->
-
-
-<!-- Fotoalbum -->
-<div class="w3-row-padding w3-margin-top w3-margin-bottom">
-
-  <div class="w3-third w3-margin-bottom">
-    <div class="w3-card">
-      <img src="../img/spanien.jpg" class="w3-image" style="width:100%">
-      <div class="w3-container">
-        <h5>Spanien</h5>
+      <div class="w3-col l2 s12 w3-theme-d4 w3-padding w3-center">
+        <b>Name</b>
       </div>
-    </div>
-  </div>
 
-  <div class="w3-third w3-margin-bottom">
-    <div class="w3-card">
-      <img src="../img/italien.jpg" class="w3-image" style="width:100%">
-      <div class="w3-container">
-        <h5>Italien</h5>
+      <div class="w3-col l6 s12 w3-theme-d4 w3-padding w3-center">
+        <b>Steckbrief</b>
       </div>
-    </div>
-  </div>
 
-  <div class="w3-third w3-margin-bottom">
-    <div class="w3-card">
-      <img src="../img/schweiz.jpg" class="w3-image" style="width:100%">
-      <div class="w3-container">
-        <h5>Schweiz</h5>
+      <div class="w3-col l4 s12 w3-theme-d4 w3-padding w3-center">
+        <b>Bewertung</b>
       </div>
-    </div>
-  </div>
 
-</div>
+    </div>
+
+    <!-- Zeile 1 -->
+    <article class="w3-row-padding w3-border-bottom w3-margin-bottom">
+
+      <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
+        <p><br>Spanien<br><br></p>
+      </div>
+
+      <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
+        <p>
+          Klima: sehr heiß & trocken (30–40 °C) <br>
+          Stimmung: lebendig, touristisch, lange Nächte <br>
+          Highlights: Strände, Städte, Party, Essen
+        </p>
+      </div>
+
+      <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
+        <p>
+          Strand:★★★★★<br>
+          Städte:★★★☆☆ (zu heiß)<br>
+          Natur:★★★★☆ (Vielfalt: Küsten, Berge, Wüstenregionen)
+        </p>
+      </div>
+
+    </article>
+
+    <!-- Zeile 2 -->
+    <article class="w3-row-padding w3-border-bottom w3-margin-bottom">
+
+      <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
+        <p><br>Italien<br><br></p>
+      </div>
+
+      <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
+        <p>
+          Klima: heiß (28–38 °C), teils schwül <br>
+          Stimmung: sehr lebendig, kulturell, touristisch <br>
+          Highlights: Essen, Küsten, Städte, Landschaft
+        </p>
+      </div>
+
+      <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
+        <p>
+          Strand:★★★★★ <br>
+          Städte:★★★☆☆ (heiß & voll) <br>
+          Natur:★★★★★ (Berge, Seen, Hügel, Küsten)
+        </p>
+      </div>
+
+    </article>
+
+    <!-- Zeile 3 -->
+    <article class="w3-row-padding w3-border-bottom w3-margin-bottom">
+
+      <div class="w3-col l2 s12 w3-theme-l3 w3-padding w3-center">
+        <p><br>Schweiz</p>
+        <br>
+      </div>
+
+      <div class="w3-col l6 s12 w3-theme-l4 w3-padding">
+        <p>
+          Klima: mild (20–30 °C), angenehm frisch <br>
+          Stimmung: ruhig, entspannt, naturorientiert <br>
+          Highlights: Berge, Seen, Wandern, frische Luft
+        </p>
+      </div>
+
+      <div class="w3-col l4 s12 w3-theme-l2 w3-padding">
+        <p>
+          Strand:★☆☆☆☆ (nur Seen und Flüsse) <br>
+          Städte:★★★★☆ (angenehm & sauber) <br>
+          Natur:★★★★★ (Alpen, Seen, beste Qualität Europas)
+        </p>
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-- Audio -->
+  <section class="w3-margin-top w3-margin-bottom w3-padding">
+
+    <h2>Meeresrauschen</h2>
+
+    <audio controls preload="none" class="w3-block">
+      <source src="../video/Meeresrauschen Audio.mp4" type="audio/mpeg">
+      Dein Browser unterstützt das Audio-Element nicht.
+    </audio>
+
+  </section>
+
+  <!-- Fotoalbum -->
+
+  <section class="w3-row-padding w3-margin-top w3-margin-bottom">
+
+    <article class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../img/spanien.jpg" class="w3-image" style="width:100%">
+        <div class="w3-container">
+          <h3>Spanien</h3>
+        </div>
+      </div>
+    </article>
+
+    <article class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../img/italien.jpg" class="w3-image" style="width:100%">
+        <div class="w3-container">
+          <h3>Italien</h3>
+        </div>
+      </div>
+    </article>
+
+    <article class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../img/schweiz.jpg" class="w3-image" style="width:100%">
+        <div class="w3-container">
+          <h3>Schweiz</h3>
+        </div>
+      </div>
+    </article>
+
+  </section>
 
 </main>
 
 <!-- Footer -->
 
-<footer class="w3-container w3-light-blue">
-  <p class="w3-xlarge w3-bold">Über diese Website</p>
-  <p>Dateiname der dazugehörenden Dokumentation <br> Abgabedatum</p>
-</footer>
+  <footer class="w3-container w3-light-blue">
+    <p class="w3-xlarge w3-bold">Über diese Website</p>
+    <p>Dateiname der dazugehörenden Dokumentation: Peter_Graber_Lindegger_MMA25cl_M287 <br>
+       Abgabedatum: 08.06.2026</p>
+  </footer>
 
 </body>
 </html>

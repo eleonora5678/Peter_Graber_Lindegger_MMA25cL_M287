@@ -23,7 +23,9 @@
    }
    </style>
 </head>
+
 <body class="w3-theme-l1 w3-border">
+
   <!--Navigation, fixiert-->
     <nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
       <a href="../index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Sommer</a>
@@ -32,101 +34,95 @@
       <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right ">Orte</a>
     </nav>
 
-  <!--/fertig/Navigation, fixiert-->
-  <!--Header-->
+ <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon/sport.png">
 
-    <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
-      <h1 class="w3-jumbo w3-animate-left">Aktivitäten</h1>
-    </header>
+  <!-- Header -->
+  <header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
+    <h1 class="w3-jumbo w3-animate-left">Aktivitäten</h1>
+  </header>
 
-   <!--/fertig/header-->
+  <main>
 
-<main>
+    <!-- Hauptteil, Einleitung -->
+    <section class="w3-container">
+      <h2>Biken & Radfahren im Ötztal - Tirol - Austria</h2>
+      <p class="w3-large">
+        Das Ötztal in Tirol bietet perfekte Bedingungen für Biker und Radfahrer. Ob gemütliche Talrouten, anspruchsvolle Mountainbike-Strecken oder spektakuläre Passstrassen – die beeindruckende Alpenlandschaft macht jede Tour zu einem besonderen Erlebnis.
+      </p>
+    </section>
 
-    <div class="w3-container">
-  <h2>
-    Biken & Radfahren im Ötztal - Tirol - Austria</h2>
-  <p class="w3-large">Das Ötztal in Tirol bietet perfekte Bedingungen für Biker und Radfahrer. Ob gemütliche Talrouten, anspruchsvolle Mountainbike-Strecken oder spektakuläre Passstrassen – die beeindruckende Alpenlandschaft macht jede Tour zu einem besonderen Erlebnis.
-</p>
-</div>
+    <!-- Video -->
+    <section class="video-container">
+      <div class="video-wrapper">
+        <video controls>
+          <source src="../video/biken.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
+    <!-- 2 Spalten, Desktop und Smartphone -->
+    <section class="w3-container w3-margin-top w3-margin-bottom">
 
-<div class="video-container">
-  <div class="video-wrapper">
-    <video controls>
-      <source src="../video/biken.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
+      <div class="w3-row">
 
+        <div class="w3-col l6 s6 w3-theme-d2 w3-padding">
+          <h2>Hier kämen Infos zu den Aktivitäten</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+        </div>
 
-<!-- 2 Spalten -->
+        <div class="w3-col s6 w3-theme-d3 w3-padding">
+          <h2>Hier kämen noch mehr Infos.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+        </div>
 
-<div class="w3-container w3-margin-top w3-margin-bottom">
+      </div>
 
-  <div class="w3-row">
+    </section>
 
-    <div class="w3-container w3-col s6 w3-theme-d2">
-      <h2>Hier kämen die Infos zu den Aktivitäten</h2>  
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
-    </div>
+    <!-- Accordion -->
+    <section class="w3-container w3-margin">
 
-    <div class="w3-container w3-col s6 w3-theme-d3">
-      <h2>Hier kämen noch mehr Infos.</h2>  
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
-    </div>
+      <button onclick="myFunction('Demo3')" 
+        class="w3-button w3-block w3-large w3-left-align w3-hover-shadow w3-theme-l3">
+        Andere Aktivitäten
+      </button>
 
-  </div>
+      <div id="Demo3" class="w3-hide w3-container w3-padding w3-theme-l5">
 
-</div>
+        <ul class="w3-ul">
+          <li>Schwimmen im See</li>
+          <li>Grillieren mit Freunden</li>
+          <li>Open-Air Kino</li>
+          <li>Velofahren</li>
+          <li>Wandern in den Bergen</li>
+        </ul>
 
-<!--Accordion-->
+      </div>
 
-<div class="w3-container w3-margin">
+    </section>
 
-  <button onclick="myFunction('Demo3')" 
-  class="w3-button w3-block w3-large w3-left-align w3-hover-shadow w3-theme-l3">
-    Andere Aktivitäten
-  </button>
+    <!-- Script Accordion -->
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
 
-  <div id="Demo3" class="w3-hide w3-container w3-padding w3-theme-l5">
+  </main>
 
-    <ul class="w3-ul">
-      <li>Schwimmen im See</li>
-      <li>Grillieren mit Freunden</li>
-      <li>Open-Air Kino</li>
-      <li>Velofahren</li>
-      <li>Wandern in den Bergen</li>
-    </ul>
-
-  </div>
-
-</div>
-
-<!-- Script Accordion -->
-<script>
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-  <!--/fertig/Accordion script-->
-  
-
-<!--/fertig/Accordion-->
-
-</main>
-
-<footer class="w3-container w3-light-blue">
-  <p class="w3-xlarge w3-bold">Über diese Website</p>
-  <p>Dateiname der dazugehörenden Dokumentation <br> 
-    Abgabedatum</p>  
-</footer>
+  <!-- Footer -->
+  <footer class="w3-container w3-light-blue">
+    <p class="w3-xlarge w3-bold">Über diese Website</p>
+    <p>Dateiname der dazugehörenden Dokumentation: Peter_Graber_Lindegger_MMA25cl_M287 <br>
+       Abgabedatum: 08.06.2026</p>
+  </footer>
 
 </body>
 </html>

@@ -4,15 +4,16 @@
     <title>Farben</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!--W3C Framework-->
+
+    <!-- W3C Framework -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
-   <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="w3-theme-l4 w3-border">
 
-<!-- Navigation -->
+<!-- Navigation, fixiert -->
 <nav class="w3-bar w3-theme w3-border w3-xlarge w3-center w3-top">
   <a href="../index.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Sommer</a>
   <a href="aktivitaeten.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Aktivitäten</a>
@@ -20,143 +21,120 @@
   <a href="ort.html" style="width:25%" class="w3-bar-item w3-button w3-border-right">Orte</a>
 </nav>
 
+ <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon/art.png">
+
+
 <!-- Header -->
-<header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white ">
+<header class="w3-container w3-theme-d5 w3-center w3-margin-top w3-padding-32 w3-text-white">
   <h1 class="w3-jumbo w3-animate-left">Farben</h1>
 </header>
 
 <main>
+
 <!-- Modal Window -->
+<section>
 
-<div class="w3-container w3-center w3-padding-64">
+  <div class="w3-container w3-center w3-padding-64">
 
-  <button 
-  onclick="document.getElementById('id01').style.display='block'" 
-  class="w3-button w3-theme-d2 w3-xxlarge w3-padding-32 w3-round-large w3-hover-shadow">
-    Sommerfarben
-  </button>
+    <button
+      onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-theme-d2 w3-xlarge w3-padding-16 w3-round-large w3-hover-shadow"
+      style="max-width:300px; width:100%;">
+      Sommerfarben
+    </button>
 
-  <div id="id01" class="w3-modal">
+    <div id="id01" class="w3-modal">
 
-    <div class="w3-modal-content w3-card-4 w3-center w3-animate-top">
+      <div class="w3-modal-content w3-card-4 w3-center w3-animate-top"
+        style="max-width:450px; width:90%;">
 
-      <header class="w3-container w3-theme-d2"> 
-        <span 
-        onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright w3-xlarge">
-          &times;
-        </span>
+        <header class="w3-container w3-theme-d2">
 
-        <h2>Sommerfarben</h2>
-      </header>
+          <span 
+            onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright w3-xlarge">
+            &times;
+          </span>
 
-      <div class="w3-container w3-padding-32">
-        <p>Sommerfarben wie Gelb, Orange oder Pink wirken warm, fröhlich und lebendig.<br>
-          Sie erinnern an Sonne, Meer und Ferien und vermitteln ein Gefühl von Freiheit und guter Laune.<br>
-          Helle Farben machen die Stimmung oft positiv und entspannt.
-        </p>
+          <h2>Sommerfarben</h2>
+        </header>
+
+        <div class="w3-container w3-padding-32">
+          <p>
+            Sommerfarben wie Gelb, Orange oder Pink wirken warm, fröhlich und lebendig.<br>
+            Sie erinnern an Sonne, Meer und Ferien und vermitteln ein Gefühl von Freiheit und guter Laune.<br>
+            Helle Farben machen die Stimmung oft positiv und entspannt.
+          </p>
+        </div>
+
+        <footer class="w3-container w3-theme-l3">
+          <p>Geniesse den Sommer!</p>
+        </footer>
+
       </div>
-
-      <footer class="w3-container w3-theme-l3">
-        <p>Geniesse den Sommer!</p>
-      </footer>
 
     </div>
 
   </div>
 
-</div>
+</section>
 
-<!--/ fertig /Modal Window -->
-<!-- Farbpalette -->
+<!-- Farbpalette, Text auf Bild, css Ergänzung  -->
+<section class="w3-row-padding w3-margin-top">
 
-<div class="w3-row-padding w3-margin-top">
-
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
       <img src="../img/gelb.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #EFD780
-      </div>
-
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#EFD780</div>
     </div>
-  </div>
+  </article>
 
-   <!-- 2 -->
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
       <img src="../img/gruen.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #C8CE72
-      </div>
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#C8CE72</div>
     </div>
-  </div>
+  </article>
 
- <!-- 3 -->
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
       <img src="../img/pink.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #F38081
-      </div>
-
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#F38081</div>
     </div>
-  </div>
+  </article>
 
-   <!-- 4 -->
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
-
       <img src="../img/lachs.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #F79977
-      </div>
-
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#F79977</div>
     </div>
-  </div>
+  </article>
 
-  <!-- 5 -->
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
-
       <img src="../img/hellblau.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #BDD8F1
-      </div>
-
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#BDD8F1</div>
     </div>
-  </div>
+  </article>
 
-  <!-- 6 -->
-  <div class="w3-col s6 m2 w3-margin-bottom">
+  <article class="w3-col s6 m2 w3-margin-bottom">
     <div class="w3-display-container color-card">
-
       <img src="../img/rosa.png" class="w3-image">
-
-      <div class="w3-display-middle w3-large w3-text-white w3-bold">
-        #E5A9A9
-      </div>
-
+      <div class="w3-display-middle w3-large w3-text-white w3-bold">#E5A9A9</div>
     </div>
-  </div>
+  </article>
 
-</div>
-<!-- /fertig/Farbboard -->
-<!-- /fertig/Farbboard -->
+</section>
 
 </main>
 
-
-<footer class="w3-container w3-light-blue">
-  <p class="w3-xlarge w3-bold">Über diese Website</p>
-  <p>Dateiname der dazugehörenden Dokumentation <br> 
-    Abgabedatum</p>  
-</footer>
+<!-- Footer -->
+  <footer class="w3-container w3-light-blue">
+    <p class="w3-xlarge w3-bold">Über diese Website</p>
+    <p>Dateiname der dazugehörenden Dokumentation: Peter_Graber_Lindegger_MMA25cl_M287 <br>
+       Abgabedatum: 08.06.2026</p>
+  </footer>
 
 </body>
 </html>
